@@ -8,6 +8,8 @@ set(SRCS
     Shaders/diffuse.vs
 )
 
+set(CMAKE_PREFIX_PATH "/usr/local/Cellar/qt@5/5.15.6")
+
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 add_executable(demo-app ${SRCS})
